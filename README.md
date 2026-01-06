@@ -1,6 +1,9 @@
-# SQL Advent Calendar 2024
+# SQL Advent Calendar 2025
+This repository contains my solutions to a 24-day SQL challenge focused on real-world data analysis problems.
 
-This repository contains my solutions to Interview Master's 24-day SQL Advent Calendar challenge.
+The challenge spans easy, intermediate, and advanced SQL concepts, including aggregations, joins, subqueries, CTEs, and window functions.
+
+It reflects my progression as an intermediate SQL practitioner, strengthening problem-solving skills through consistent daily practice.
 
 ## About the Challenge
 
