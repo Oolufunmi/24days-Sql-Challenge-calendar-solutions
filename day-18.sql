@@ -13,7 +13,7 @@
 Can you find each subject's first and last recorded score to see how much she improved?
   
 -- My Solution:
-
+  
 with FirstScores AS (
   select subject, score as first_score 
   from ( 
@@ -24,7 +24,7 @@ with FirstScores AS (
   ) AS sub_first
   where rn = 1 
 ),
-
+  
 LastScores AS (
   select subject, score as last_score 
   from ( 
