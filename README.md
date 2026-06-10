@@ -1,4 +1,6 @@
 # SQL Advent Calendar 2025
+Collection of advanced SQL solutions covering reporting, ranking, segmentation, and trend analysis.
+
 This repository contains my solutions to a 24-day SQL challenge focused on real-world data analysis problems.
 
 The challenge spans easy, intermediate, and advanced SQL concepts, including aggregations, joins, subqueries, CTEs, and window functions.
