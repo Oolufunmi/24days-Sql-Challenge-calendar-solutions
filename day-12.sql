@@ -18,7 +18,6 @@
 --Write a query to count how many messages each user sent, then find the most active user(s) each day. 
 --If multiple users tie for first place, return all of them.
 
-
 -- My Solution:
 
 with CTE as (
@@ -28,7 +27,6 @@ with CTE as (
   on npn_messages.sender_id = npn_users.user_id
 GROUP by DATE(npn_messages.sent_at), npn_users.user_id,npn_users.user_name
   ),
-  
 Ranking AS
   (Select Messagedate,Totalmessage, user_id,user_name,
   rank() over (partition by Messagedate 
