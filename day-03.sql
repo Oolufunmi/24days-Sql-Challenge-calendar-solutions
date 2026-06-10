@@ -2,11 +2,6 @@
 -- Title: The Grinch's Best Pranks Per Target
 -- Difficulty: hard
 --
--- Question:
--- The Grinch has brainstormed a ton of pranks for Whoville, but he only wants to keep the top prank per target, with the highest evilness score. Return the most evil prank for each target. If two pranks have the same evilness, the more recently brainstormed wins.
---
--- The Grinch has brainstormed a ton of pranks for Whoville, but he only wants to keep the top prank per target, with the highest evilness score. Return the most evil prank for each target. If two pranks have the same evilness, the more recently brainstormed wins.
---
 
 -- Table Schema:
 -- Table: grinch_prank_ideas
@@ -16,15 +11,12 @@
 --   evilness_score: INTEGER
 --   created_at: TIMESTAMP
 --
-
--- My Solution:
-
+-- Question:
+-- The Grinch has brainstormed a ton of pranks for Whoville, but he only wants to keep the top prank per target, with the highest evilness score. Return the most evil prank for each target. If two pranks have the same evilness, the more recently brainstormed wins.
+--
 WITH RankedPranks AS (
     SELECT
-        target_name,
-        prank_id,
-        evilness_score,
-        created_at,
+        target_name,prank_id,evilness_score,created_at,
         -- Assigns a rank based on the required criteria within each target group
         ROW_NUMBER() OVER (
             PARTITION BY target_name 
@@ -36,10 +28,7 @@ WITH RankedPranks AS (
         grinch_prank_ideas
 )
 SELECT
-    target_name,
-    prank_id,
-    evilness_score,
-    created_at
+    target_name, prank_id,evilness_score,created_at
 FROM
     RankedPranks
 WHERE
