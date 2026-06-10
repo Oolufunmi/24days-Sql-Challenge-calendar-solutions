@@ -23,8 +23,7 @@ with FirstScores AS (
   FROM daily_quiz_scores
   ) AS sub_first
   where rn = 1 
-),
-  
+),  
 LastScores AS (
   select subject, score as last_score 
   from ( 
