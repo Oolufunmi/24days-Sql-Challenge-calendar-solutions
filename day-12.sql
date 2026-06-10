@@ -13,12 +13,12 @@
 --   sender_id: INT
 --   sent_at: TIMESTAMP
 --
-###Question:
+-Question:
 -- The North Pole Network wants to see who's the most active in the holiday chat each day. 
 --Write a query to count how many messages each user sent, then find the most active user(s) each day. 
 --If multiple users tie for first place, return all of them.
 
-###My Solution:
+-My Solution:
 
 with CTE as (
   select DATE(npn_messages.sent_at)AS Messagedate, npn_users.user_name,npn_users.user_id,
