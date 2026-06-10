@@ -17,7 +17,7 @@ Skills Demonstrated
 
 Tools:
 MySQL | SQL
-This repository contains my solutions to a 24-day SQL challenge focused on real-world data analysis problems.
+--This repository contains my solutions to a 24-day SQL challenge focused on real-world data analysis problems.
 
 The challenge spans easy, intermediate, and advanced SQL concepts, including aggregations, joins, subqueries, CTEs, and window functions.
 
